@@ -33,7 +33,7 @@ const Register = () => {
             password: user.password,
             confirm_password: user.confirm_password
         }
-        axios.post('http://localhost:3001/users/register', data).then( (res) => {
+        axios.post('/users/register', data).then( (res) => {
             swal("Registration Success!", "You're now Registered", "success");
             console.log(res.data);
             setUser(
